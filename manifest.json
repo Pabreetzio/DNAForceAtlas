@@ -3,14 +3,24 @@
 	"version": "1.0",
 	"name": "DNA Force Atlas",
 	"description": "DNA Force Atlas Chrome Extension for Ancestry.com",
+	"permissions": ["declarativeContent", "storage"],  
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
 	"icons": {
 		"16": "images/double-helix-icon-16.png",
 		"32": "images/double-helix-icon-32.png",
 		"48": "images/double-helix-icon-48.png",
 		"128": "images/double-helix-icon-128.png"
 	},
-	"browser_action": {
-		"default_icon": "images/double-helix-icon-128.png",
-		"default_popup": "popup.html"
+	"page_action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "images/double-helix-icon-16.png",
+			"32": "images/double-helix-icon-32.png",
+			"48": "images/double-helix-icon-48.png",
+			"128": "images/double-helix-icon-128.png"
+		}
 	}
 }
