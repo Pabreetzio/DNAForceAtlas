@@ -1,0 +1,29 @@
+{
+  "name": "dnaforceatlas",
+  "version": "1.0.0",
+  "description": "DNA Force Atlas Chrome Extension for Ancestry.com",
+  "main": "background.js",
+  "dependencies": {
+    "idb": "^4.0.5"
+  },
+  "devDependencies": {
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack sandbox.ts -o dist/bundle.js --module-bind ts=ts-loader -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pabreetzio/DNAForceAtlas.git"
+  },
+  "author": "Patrick Graham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Pabreetzio/DNAForceAtlas/issues"
+  },
+  "homepage": "https://github.com/Pabreetzio/DNAForceAtlas#readme"
+}
